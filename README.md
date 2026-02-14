@@ -13,6 +13,7 @@ The goal is to determine which model best identifies customers likely to churn w
 The main stakeholders are the Customer Success and Retention Teams. They require a system that flags customers at risk of churn before they leave, enabling proactive interventions rather than reactive responses. This approach helps reduce revenue loss, improves customer lifetime value, and strengthens long-term relationships.
 ## Dataset Choice
 The project uses the churn.csv dataset, which contains 3,333 records describing customer behavior.
+
 **Features**: - 
 - account length
 - international plan
@@ -31,10 +32,12 @@ The project uses the churn.csv dataset, which contains 3,333 records describing 
 **Target Variable (churn)**:
 - Class 0: Customer retained
 - Class 1: Customer churned
+
 **Challenge**: 
 - The dataset is imbalanced, with fewer churned customers than retained ones. This makes it harder for models to identify the minority class, so metrics beyond accuracy such as Recall, Precision, and F1-score are critical for evaluation.
 ## Modeling Approach
 Four classification models were trained and evaluated:
+
 ***1.Logistics Regression:***
 - Linear model used as a baseline, providing interpretability by showing how each feature influences the probability of churn.
 ***2.Decision Tree Classifier:***
