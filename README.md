@@ -35,15 +35,19 @@ The project uses the churn.csv dataset, which contains 3,333 records describing 
 
 **Challenge**: 
 - The dataset is imbalanced, with fewer churned customers than retained ones. This makes it harder for models to identify the minority class, so metrics beyond accuracy such as Recall, Precision, and F1-score are critical for evaluation.
+
 ## Modeling Approach
 Four classification models were trained and evaluated:
 
 ***1.Logistics Regression:***
 - Linear model used as a baseline, providing interpretability by showing how each feature influences the probability of churn.
+
 ***2.Decision Tree Classifier:***
 - Non-linear, rule-based model that can capture complex interactions between features.
+
 ***3.Random Forest:***
 - An ensemble of decision trees improving predictive stability and reducing overfitting.
+
 ***4.Gradient Boosting:***
 - A boosted ensemble model that iteratively improves weak learners, typically yielding the highest predictive accuracy.
 - All models were trained on the same processed dataset to ensure fair comparison.
@@ -76,16 +80,21 @@ Gradient Boosting	93.2%
 ## Precision, Recall & F1-Score
 
 Model	Precision	Recall	F1-Score
+
 Logistic Regression	0.506	0.178	0.263
+
 Decision Tree	0.618	0.595	0.606
+
 Random Forest	0.927	0.579	0.712
+
 Gradient Boosting	0.861	0.616	0.718
 
 ***Interpretation:***
-•	Logistic Regression: Misses most churners (Recall = 17.8%), making it unsuitable for proactive retention despite decent accuracy.
-•	Decision Tree: Balanced performance (Recall = 59.5%, F1 = 60.6%), interpretable rules for business use.
-•	Random Forest: Extremely precise (92.7%) and strong F1-score (71.2%), but moderate recall means some churners are still missed.
-•	Gradient Boosting: Best overall balance (Recall = 61.6%, F1 = 71.8%), high AUC (0.913), and strong predictive performance.
+- ***Logistic Regression:*** Misses most churners (Recall = 17.8%), making it unsuitable for proactive retention despite decent accuracy.
+- ***Decision Tree:*** Balanced performance (Recall = 59.5%, F1 = 60.6%), interpretable rules for business use.
+- ***Random Forest***: Extremely precise (92.7%) and strong F1-score (71.2%), but moderate recall means some churners are still missed.
+- ***Gradient Boosting***: Best overall balance (Recall = 61.6%, F1 = 71.8%), high AUC (0.913), and strong predictive performance.
+
 **AUC Score**
 Model	AUC
 Logistic Regression	0.830
