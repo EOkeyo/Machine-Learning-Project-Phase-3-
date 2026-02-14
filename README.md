@@ -27,6 +27,7 @@ The project uses the churn.csv dataset, which contains 3,333 records describing 
 - total intl minutes
 - total intl charge
 - customer service calls
+
 **Target Variable (churn)**:
 - Class 0: Customer retained
 - Class 1: Customer churned
