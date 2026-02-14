@@ -1,5 +1,3 @@
-# Machine-Learning-Project-Phase-3-
-Customer Churn Prediction Project
 # Customer Churn Prediction Project
 ## (Machine Learning Project (Phase 3))
 ## Project Overview
@@ -47,12 +45,12 @@ Four classification models were trained and evaluated:
 - All models were trained on the same processed dataset to ensure fair comparison.
 
 ## Evaluation Metrics
-Models were evaluated using Accuracy, Precision, Recall, F1-Score, and AUC.
-***-Accuracy:*** Overall percentage of correct predictions.
-***-Precision:*** Percentage of predicted churners who actually churned (reliability of alerts).
-***-Recall:*** Percentage of actual churners correctly identified; crucial for reducing revenue loss.
-***-F1-Score:*** Harmonic mean of Precision and Recall; balances false positives and false negatives.
-***-AUC (Area Under ROC Curve):*** Measures overall ability to distinguish churners from non-churners.
+- Models were evaluated using Accuracy, Precision, Recall, F1-Score, and AUC.
+- ***Accuracy:*** Overall percentage of correct predictions.
+- ***Precision:*** Percentage of predicted churners who actually churned (reliability of alerts).
+- ***Recall:*** Percentage of actual churners correctly identified; crucial for reducing revenue loss.
+- ***F1-Score:*** Harmonic mean of Precision and Recall; balances false positives and false negatives.
+- ***AUC (Area Under ROC Curve):*** Measures overall ability to distinguish churners from non-churners.
 ## Model Performance
 ## Confusion Matrix
  
@@ -71,7 +69,8 @@ Gradient Boosting	93.2%
 ***Interpretation:***
 - Random Forest and Gradient Boosting have the highest overall accuracy. However, due to class imbalance, accuracy alone does not fully reflect the ability to detect churners.
 
-**Precision, Recall & F1-Score**
+## Precision, Recall & F1-Score
+
 Model	Precision	Recall	F1-Score
 Logistic Regression	0.506	0.178	0.263
 Decision Tree	0.618	0.595	0.606
